@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<body>
+
+<h2>Predicted AQI</h2>
+<h1>{{ aqi }}</h1>
+
+<a href="/">Go Back</a>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Predicted AQI</title>
+
+    ✅ CSS link MUST be inside head 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Predicted AQI</h2>
+<h1>{{ aqi }}</h1>
+
+<a href="/">Go Back</a>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Predicted AQI</title>
+
+     CSS Link 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .instructions {
+  max-width: 650px;
+  margin: 25px auto;
+ 
+  padding: 20px;
+  border-radius: 10px;
+
+  /* ✅ Justify text */
+  text-align: justify;
+}
+
+.instructions h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  
+}
+
+.instructions p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+<h2>Predicted AQI</h2>
+<h1>{{ aqi }}</h1>
+
+ Instructions Section
+<div class="instructions">
+    <h3>What does this AQI mean?</h3>
+    <p>
+        Air Quality Index (AQI) shows how clean or polluted the air is.
+        A higher AQI value means poorer air quality and higher health risk.
+    </p>
+
+    <h3>Health Tips</h3>
+
+    <p>
+        If AQI is below 50, the air quality is good and it is safe to do outdoor activities.
+    </p>
+
+    <p>
+        If AQI is between 51 and 100, the air quality is moderate.
+        People with breathing problems should be careful.
+    </p>
+
+    <p>
+        If AQI is above 100, the air quality is unhealthy.
+        Avoid long outdoor activities and stay indoors as much as possible.
+    </p>
+
+    <p>
+        Always wear a mask and drink enough water when air quality is poor.
+    </p>
+</div>
+
+<a href="/">Go Back</a>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Predicted AQI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="aqi-card">
+    <h2>Predicted AQI</h2>
+    <h1>{{ aqi }}</h1>
+</div>
+
+<div class="instructions">
+    <h3>What does this AQI mean?</h3>
+    <p>
+        Air Quality Index (AQI) shows how clean or polluted the air is.
+        A higher AQI value means poorer air quality and higher health risk.
+    </p>
+
+    <h3>Health Tips</h3>
+    <p>If AQI is below 50, the air quality is good and it is safe to do outdoor activities.</p>
+    <p>If AQI is between 51 and 100, the air quality is moderate. People with breathing problems should be careful.</p>
+    <p>If AQI is above 100, the air quality is unhealthy. Avoid long outdoor activities and stay indoors as much as possible.</p>
+    <p>Always wear a mask and drink enough water when air quality is poor.</p>
+</div>
+
+<!-- <a href="/predict" class="back-btn">Go Back</a> -->
+<a href="{{ url_for('predict') }}" class="back-btn">Go Back</a>
+
+</body>
+</html>

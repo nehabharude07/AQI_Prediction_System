@@ -1,0 +1,198 @@
+/* style.css */
+/*
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1a969b, #77dbfa);
+  padding: 40px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cc7878;
+  font-size: 16px;
+  width: 120px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #5c86b3;
+  box-shadow: 0 0 10px rgba(92, 134, 179, 0.5);
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: #5c86b3;
+  color: #19c2a6;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #477399;
+  color: #5bd5eb;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+*/
+
+/* body dark theme */
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+}
+
+/* Form card for login & prediction */
+.form-card {
+  background: #1f1f1f;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  color: #19c2a6;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #2c2c2c;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+.form-card input:focus {
+  outline: none;
+  border-color: #5bd5eb;
+  box-shadow: 0 0 10px #5bd5eb;
+}
+
+.form-card button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: #19c2a6;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-card button:hover {
+  background: #5bd5eb;
+  transform: scale(1.05);
+}
+
+/* AQI Card */
+.aqi-card {
+  background: #292929;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.05) inset;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aqi-card:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.7), 0 0 30px rgba(255,255,255,0.1) inset;
+}
+
+.aqi-card h2 {
+  font-size: 28px;
+  color: #19c2a6;
+  margin-bottom: 15px;
+}
+
+.aqi-card h1 {
+  font-size: 60px;
+  text-shadow: 0 0 10px #19c2a6, 0 0 20px #5bd5eb;
+  margin-bottom: 20px;
+}
+
+/* Instructions Section */
+.instructions {
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  max-width: 700px;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.instructions h3 {
+  text-align: center;
+  color: #19c2a6;
+  margin-bottom: 15px;
+}
+
+.instructions p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #ddd;
+  font-weight: bold;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #19c2a6;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #5bd5eb;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
